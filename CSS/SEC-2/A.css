@@ -1,0 +1,95 @@
+#SEC-2 {
+    position: relative;
+    width: clamp(300px, 100%, 100%);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #a38a3c; */
+    /* background: #E2DFD2; */
+    background: #F9F6EE;
+}
+
+.Trending-Container {
+    position: relative;
+    width: 100%;
+    height: clamp(129px, 19vh, 129px);
+    display: flex;
+    align-items: center;
+}
+
+.Trending {
+    font-size: 3rem;
+    font-family: 'Major Mono Display', monospace;
+    margin-left: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.View {
+    position: absolute;
+    right: 0;
+    margin-right: 4rem;
+    border: solid black 2px;
+    background-color: #FEE561;
+    color: #000000;
+    border-radius: 4rem;
+    width: clamp(107px,7vw,107px);
+    height: clamp(37px,5vh,37px);
+    font-size: 1rem;
+    transition: 0.3s;
+    font-family: var(--Headline);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.View:hover {
+    transition: 0.3s;
+    transform: translateX(-8px) translateY(8px);
+    box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+}
+
+
+#Trending-info-wapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#Row-1 {
+    width: clamp(300px, 95vw, 1459px);
+    height: max-content;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: tests 1s both;
+}
+@keyframes tests {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+}
+
+.Line {
+    position: absolute;
+    top: 31%;
+    width: 90%;
+    height: 6px;
+    background-color: #080808;
+display: none;
+}
+
+.Line2 {
+    position: absolute;
+    bottom: 235px;
+    width: 90%;
+    height: 6px;
+    background-color: #ED760E;
+display: none;
+}
+
